@@ -4,6 +4,8 @@ def fizz():
         number = x+1
         if(number % 3 == 0):
             nums.append("Fizz")
+        elif(number % 5 == 0):
+            nums.append("Buzz")
         else:
             nums.append(number)
     return nums
