@@ -15,8 +15,9 @@ class TestCase(unittest.TestCase):
     def test_pass_3(self):
         test = fizz.fizz() #test[4] should be Buzz as 5 is divisible by 3
         self.assertEqual(test[4], "Buzz")
-
-
+    def test_pass_4(self):
+        test = fizz.fizz() #test[14] should be FizzBuzz as 15 is divisible by 3 and 5
+        self.assertEqual(test[14], "FizzBuzz")
 
 if __name__ == '__main__':
     unittest.main()
