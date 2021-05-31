@@ -11,7 +11,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(test[0], 1)
     def test_pass_2(self):
         test = fizz.fizz() #test[0] should equal 1 as fizz returns the array sequence
-        self.assertEqual(test[2], "fizz")
+        self.assertEqual(test[2], "Fizz")
 
 
 
