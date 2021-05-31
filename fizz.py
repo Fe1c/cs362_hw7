@@ -3,7 +3,10 @@ def fizz():
     for x in range(100):
         number = x+1
         if(number % 3 == 0):
-            nums.append("Fizz")
+            if(number % 5 == 0):
+                nums.append("FizzBuzz")
+            else:
+                nums.append("Fizz")
         elif(number % 5 == 0):
             nums.append("Buzz")
         else:
