@@ -11,7 +11,9 @@ class TestCase(unittest.TestCase):
         self.assertEqual(leap.leap(2012), "true")
     def test_pass_2(self):
         #test to see if a year divible by 4 and 100
-        self.assertEqual(leap.leap(2000), "false")
-
+        self.assertEqual(leap.leap(2000), "true")
+    def test_pass_3(self):
+        #test to see if a year divible by 4 and 100 and 400, then its a leap year
+        self.assertEqual(leap.leap(1800), "false")
 if __name__ == '__main__':
     unittest.main()
